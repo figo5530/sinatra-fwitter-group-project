@@ -1,0 +1,8 @@
+<h1>Welcome,<%= session[:username] %></h1>
+<h2> Tweets </h2>
+<ul>
+<% Tweet.all.each do |t| %>
+  <li><%= t.content %></li>
+<% end %>
+</ul>
+<a href="/">Home page</a>
